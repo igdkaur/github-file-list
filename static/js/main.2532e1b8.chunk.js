@@ -1,0 +1,2 @@
+(this["webpackJsonpstatic-tweet"]=this["webpackJsonpstatic-tweet"]||[]).push([[0],{4:function(t,e,c){"use strict";c.r(e);c(1);var n=c(3),s=c.n(n),r=(c(9),c(0));function i(){return Object(r.jsx)("div",{className:"tweet",children:"HEY"})}s.a.render(Object(r.jsx)(i,{}),document.querySelector("#root"))},9:function(t,e,c){}},[[4,1,2]]]);
+//# sourceMappingURL=main.2532e1b8.chunk.js.map
