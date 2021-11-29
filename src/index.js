@@ -36,13 +36,17 @@ const testFiles = [
   },
 ];
 
+const FileListItem = ({file}) => (
+  <tr className="file-list-item" key={file.id}>
+    <td className="file-name">{file.name}</td>
+  </tr>
+)
+
 const FileList = ({ files }) => (
   <table className="file-list">
     <tbody>
       {files.map((file) => (
-        <tr className="file-list-item" key={file.id}>
-          <td className="file-name">{file.name}</td>
-        </tr>
+        <FileListItem key = {file.id} file = {file}/>
       ))}
     </tbody>
   </table>
