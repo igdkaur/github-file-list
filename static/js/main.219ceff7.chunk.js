@@ -1,2 +1,0 @@
-(this["webpackJsonpgithub-file-list"]=this["webpackJsonpgithub-file-list"]||[]).push([[0],{4:function(t,e,i){"use strict";i.r(e);i(1);var n=i(3),s=i.n(n),c=(i(9),i(0));function r(){return Object(c.jsx)("div",{className:"tweet",children:"HEY"})}s.a.render(Object(c.jsx)(r,{}),document.querySelector("#root"))},9:function(t,e,i){}},[[4,1,2]]]);
-//# sourceMappingURL=main.219ceff7.chunk.js.map
