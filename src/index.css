@@ -34,3 +34,15 @@ code {
 .file-icon .fa-folder {
   color: #508fca;
 }
+
+.commit-message {
+  max-width: 442px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+.age {
+  width: 125px;
+  text-align: right;
+  padding-right: 4px;
+}

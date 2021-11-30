@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import PropTypes from "prop-types";
+import Time from './time';
 
 // Create the FileList component. In the interest of doing the simplest thing that
 // can possibly work, we’ll render a plain unordered list of file names. Once it
@@ -58,9 +59,18 @@ function FileIcon({ file }) {
 }
 
 const FileListItem = ({ file }) => (
-  <tr className="file-list-item">{getFileName(file)}</tr>
+  <tr className="file-list-item">
+    {getFileName(file)}
+    <CommitMessage commit={file.latestCommit} />
+    <td className="age">
+      <Time time={file.updated_at} />
+    </td>
+  </tr>
 );
 
+const CommitMessage = ({ commit }) => (
+  <td className="commit-message">{commit.message}</td>
+);
 
 const FileList = ({ files }) => (
   <table className="file-list">
@@ -85,8 +95,14 @@ FileListItem.propTypes = {
   file: PropTypes.object.isRequired,
 };
 
+CommitMessage.propTypes = {
+  commit: PropTypes.object.isRequired,
+};
+
+
 
 ReactDOM.render(
   <FileList files={testFiles} />,
   document.querySelector("#root")
 );
+
