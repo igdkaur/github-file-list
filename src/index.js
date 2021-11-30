@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import PropTypes from "prop-types";
-import Time from './time';
+import Time from "./time";
 
 // Create the FileList component. In the interest of doing the simplest thing that
 // can possibly work, we’ll render a plain unordered list of file names. Once it
@@ -99,10 +99,7 @@ CommitMessage.propTypes = {
   commit: PropTypes.object.isRequired,
 };
 
-
-
 ReactDOM.render(
   <FileList files={testFiles} />,
   document.querySelector("#root")
 );
-
